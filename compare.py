@@ -31,3 +31,10 @@ print('time to sum a generator: %f' % (time.time() - t1))
 t1=time.time()
 sum(oddLst(1, 1000000))
 print('time to build and sum a list: %f' % (time.time() - t1))
+
+'''
+Building a list to do this calculation takes significantly longer.
+The performance improvement as a result of using generators is 
+because the values are generated on demand, rather than saved as 
+a list in memory.
+'''
